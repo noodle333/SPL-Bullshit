@@ -1,0 +1,60 @@
+<TextureAtlas imagePath="sprites.png">
+	<SubTexture name="Arrow.png" x="0" y="16" width="128" height="50"/>
+	<SubTexture name="Box 01.png" x="0" y="179" width="128" height="128"/>
+	<SubTexture name="Breakable Brick 01.png" x="0" y="387" width="128" height="113"/>
+	<SubTexture name="Brick Solid.png" x="128" y="480" width="128" height="128"/>
+	<SubTexture name="Brick.png" x="0" y="66" width="128" height="113"/>
+	<SubTexture name="Button 01.png" x="369" y="592" width="96" height="64"/>
+	<SubTexture name="Cave Corner 1.png" x="579" y="384" width="80" height="96"/>
+	<SubTexture name="Cave Corner 3.png" x="0" y="500" width="128" height="128"/>
+	<SubTexture name="Cave Detail 1.png" x="128" y="0" width="128" height="112"/>
+	<SubTexture name="Cave Floor 1.png" x="128" y="368" width="128" height="112"/>
+	<SubTexture name="Cave Wall 1.png" x="675" y="128" width="96" height="128"/>
+	<SubTexture name="Chain.png" x="758" y="384" width="50" height="128"/>
+	<SubTexture name="Chest 01.png" x="256" y="354" width="113" height="97"/>
+	<SubTexture name="Coin 01.png" x="564" y="695" width="98" height="98"/>
+	<SubTexture name="Coins Pile.png" x="369" y="224" width="112" height="64"/>
+	<SubTexture name="Crystals.png" x="0" y="307" width="128" height="80"/>
+	<SubTexture name="Dirt.png" x="0" y="628" width="128" height="128"/>
+	<SubTexture name="Door 01.png" x="579" y="0" width="98" height="128"/>
+	<SubTexture name="Fire 01.png" x="662" y="640" width="96" height="128"/>
+	<SubTexture name="Ghost 01.png" x="564" y="500" width="98" height="97"/>
+	<SubTexture name="Grass 1.png" x="354" y="707" width="112" height="96"/>
+	<SubTexture name="Heart 01.png" x="256" y="0" width="113" height="113"/>
+	<SubTexture name="Jewel 1.png" x="256" y="241" width="113" height="113"/>
+	<SubTexture name="Key 01.png" x="128" y="721" width="113" height="66"/>
+	<SubTexture name="Key Block.png" x="128" y="240" width="128" height="128"/>
+	<SubTexture name="Ladder.png" x="579" y="128" width="96" height="128"/>
+	<SubTexture name="Lava 01.png" x="128" y="608" width="128" height="113"/>
+	<SubTexture name="Magic.png" x="564" y="597" width="98" height="98"/>
+	<SubTexture name="Overhead Rope.png" x="0" y="0" width="128" height="16"/>
+	<SubTexture name="Pillar Base.png" x="256" y="579" width="113" height="128"/>
+	<SubTexture name="Pillar Middle.png" x="758" y="512" width="50" height="128"/>
+	<SubTexture name="Pillar Top.png" x="256" y="451" width="113" height="128"/>
+	<SubTexture name="Platform.png" x="241" y="721" width="113" height="81"/>
+	<SubTexture name="Player Climb 01.png" x="579" y="256" width="96" height="128"/>
+	<SubTexture name="Player Climb 02.png" x="662" y="512" width="96" height="128"/>
+	<SubTexture name="Player Fall.png" x="481" y="128" width="98" height="128"/>
+	<SubTexture name="Player Idle.png" x="466" y="592" width="98" height="128"/>
+	<SubTexture name="Player Rope 01.png" x="369" y="288" width="112" height="128"/>
+	<SubTexture name="Player Rope 02.png" x="662" y="384" width="96" height="128"/>
+	<SubTexture name="Player Rope 03.png" x="675" y="256" width="80" height="128"/>
+	<SubTexture name="Player Run 01.png" x="481" y="0" width="98" height="128"/>
+	<SubTexture name="Player Run 02.png" x="743" y="0" width="66" height="128"/>
+	<SubTexture name="Player Run 03.png" x="755" y="256" width="50" height="128"/>
+	<SubTexture name="Player Run 04.png" x="677" y="0" width="66" height="128"/>
+	<SubTexture name="Rocks 1.png" x="0" y="756" width="128" height="32"/>
+	<SubTexture name="Shroom 01.png" x="481" y="419" width="98" height="81"/>
+	<SubTexture name="Spider 01.png" x="256" y="113" width="113" height="128"/>
+	<SubTexture name="Spider Line.png" x="0" y="0" width="128" height="16"/>
+	<SubTexture name="Spider Web.png" x="128" y="112" width="128" height="128"/>
+	<SubTexture name="Spike.png" x="466" y="720" width="98" height="49"/>
+	<SubTexture name="Spring 01.png" x="481" y="256" width="98" height="65"/>
+	<SubTexture name="Stalagmite 1.png" x="369" y="128" width="112" height="96"/>
+	<SubTexture name="Switch 01.png" x="481" y="500" width="80" height="64"/>
+	<SubTexture name="Sword.png" x="481" y="321" width="98" height="98"/>
+	<SubTexture name="Torch 01.png" x="369" y="656" width="16" height="32"/>
+	<SubTexture name="Vine.png" x="369" y="0" width="112" height="128"/>
+	<SubTexture name="Window 2.png" x="369" y="464" width="112" height="128"/>
+	<SubTexture name="Window Top.png" x="369" y="416" width="112" height="48"/>
+</TextureAtlas>
