@@ -107,7 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boolTrue
+      name: boolFalse
       rect:
         serializedVersion: 2
         x: 0
@@ -128,7 +128,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boolFalse
+      name: boolTrue
       rect:
         serializedVersion: 2
         x: 16
@@ -265,9 +265,9 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Programming_boxes_6: -322587001
-      boolFalse: 308652038
+      boolFalse: 600466847
       char: -1104768505
-      boolTrue: 600466847
+      boolTrue: 308652038
       int: 791840793
       string: -217164802
       float: 1928365548
