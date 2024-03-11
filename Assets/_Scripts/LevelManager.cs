@@ -13,6 +13,7 @@ public class LevelManager : MonoBehaviour
             if (!winTriggers[i].active) return;
         }
 
+        //test2
         action.Invoke();
     }
 }
