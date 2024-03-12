@@ -20,6 +20,7 @@ public class ButtonTrigger : MonoBehaviour
     [Header("LevelManager")]
     [SerializeField] private LevelManager levelManager;
     public bool active = false;
+    public bool stayDeactivated = false;
 
     private GameObject currentBlock;
 
@@ -63,19 +64,21 @@ public class ButtonTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        BoxMovement box = other.GetComponent<BoxMovement>();
-        if (!box) return;
-
-        ErrorMessage();
-        foreach (GameObject eb in expectedBlock)
+        if (!stayDeactivated)
         {
-            if (box.gameObject == eb)
+            BoxMovement box = other.GetComponent<BoxMovement>();
+            if (!box) return;
+
+            ErrorMessage();
+            foreach (GameObject eb in expectedBlock)
             {
-                if (winAction != null) winAction.Invoke();
-                active = false;
+                if (box.gameObject == eb)
+                {
+                    if (winAction != null) winAction.Invoke();
+                    active = false;
+                }
             }
         }
-
     }
 
     public void IncorrectOperator()
@@ -88,3 +91,7 @@ public class ButtonTrigger : MonoBehaviour
         Debug.Log("Operation missing value");
     }
 }
+
+
+
+
