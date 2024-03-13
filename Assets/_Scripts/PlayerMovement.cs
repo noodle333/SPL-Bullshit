@@ -8,10 +8,24 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask collisionLayer;
     private bool isMoving = false;
 
+    private bool canMove = false;
+    private bool restartGame = true;
+
+    private void Start()
+    {
+        StartCoroutine(EnableRestartGame());
+    }
+
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        if (!isMoving)
+        if (Input.GetKeyDown(KeyCode.R) && !restartGame)
+        {
+            canMove = false;
+            restartGame = true;
+            FindObjectOfType<SceneLoader>().StartLoadSceneMenu(SceneManager.GetActiveScene().name);
+        }
+
+        if (!isMoving && canMove)
         {
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
             {
@@ -30,6 +44,13 @@ public class PlayerMovement : MonoBehaviour
                 StartCoroutine(Move(Vector2.right));
             }
         }
+    }
+
+    private IEnumerator EnableRestartGame()
+    {
+        yield return new WaitForSeconds(1.5f);
+        restartGame = false;
+        canMove = true;
     }
 
     private IEnumerator Move(Vector2 dir)
