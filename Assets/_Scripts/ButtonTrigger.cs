@@ -8,7 +8,7 @@ public class ButtonTrigger : MonoBehaviour
     //meaning you can have as many as you want and only 1 is needed to complete the level
 
     [Header("GameObject for the correct block for the position")]
-    [SerializeField] private GameObject expectedBlock;
+    [SerializeField] public GameObject[] expectedBlock;
 
     [Header("winAction optional")]
     [SerializeField] private UnityEvent winAction;
@@ -20,6 +20,7 @@ public class ButtonTrigger : MonoBehaviour
     [Header("LevelManager")]
     [SerializeField] private LevelManager levelManager;
     public bool active = false;
+    public bool stayDeactivated = false;
 
     private GameObject currentBlock;
 
@@ -28,16 +29,19 @@ public class ButtonTrigger : MonoBehaviour
         BoxMovement box = other.GetComponent<BoxMovement>();
         if (!box) return;
 
-        if (box.gameObject == expectedBlock)
+        foreach (GameObject eb in expectedBlock)
         {
-            active = true;
-            if (winAction != null)
+            if (box.gameObject == eb)
             {
-                winAction.Invoke();
-            }
-            else
-            {
-                levelManager.WinCheck();
+                active = true;
+                if (winAction != null)
+                {
+                    winAction.Invoke();
+                }
+                else
+                {
+                    levelManager.WinCheck();
+                }
             }
         }
 
@@ -50,18 +54,30 @@ public class ButtonTrigger : MonoBehaviour
             }
         }
 
+        if (other.tag == "RockBox")
+        {
+            other.gameObject.SetActive(false);
+            GetComponent<RockCounter>().rocksNeeded -= GetComponent<RockCounter>().amountPerRock;
+        }
+
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        BoxMovement box = other.GetComponent<BoxMovement>();
-        if (!box) return;
-
-        ErrorMessage();
-        if (box.gameObject == expectedBlock)
+        if (!stayDeactivated)
         {
-            if (winAction != null) winAction.Invoke();
-            active = false;
+            BoxMovement box = other.GetComponent<BoxMovement>();
+            if (!box) return;
+
+            ErrorMessage();
+            foreach (GameObject eb in expectedBlock)
+            {
+                if (box.gameObject == eb)
+                {
+                    if (winAction != null) winAction.Invoke();
+                    active = false;
+                }
+            }
         }
     }
 
@@ -75,3 +91,7 @@ public class ButtonTrigger : MonoBehaviour
         Debug.Log("Operation missing value");
     }
 }
+
+
+
+
