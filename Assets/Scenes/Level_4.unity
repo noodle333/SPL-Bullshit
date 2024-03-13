@@ -8713,8 +8713,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99e71de9649d5b04c86dcba0da39efcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Level_4
+  sceneToLoad: Level_5
   transitionImage: {fileID: 1738685402}
+  stopStartTransition: 0
 --- !u!61 &1271311214
 BoxCollider2D:
   m_ObjectHideFlags: 0
