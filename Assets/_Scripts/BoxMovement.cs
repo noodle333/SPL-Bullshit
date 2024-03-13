@@ -3,9 +3,6 @@ using UnityEngine;
 
 public class BoxMovement : MonoBehaviour
 {
-    // [Header("Logic Values. Ex([bool, true] or [int, 5])")]
-    // public string type;
-    // public string value;
 
     [Header("Movement")]
     [SerializeField] private float timeToMove = .1f;
