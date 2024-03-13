@@ -1327,7 +1327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   expectedBlock:
-  - {fileID: 0}
+  - {fileID: 1520186877}
   winAction:
     m_PersistentCalls:
       m_Calls:
@@ -3047,6 +3047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Level_3
   transitionImage: {fileID: 1622729881}
+  stopStartTransition: 0
 --- !u!61 &919207208
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7844,7 +7845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   expectedBlock:
-  - {fileID: 0}
+  - {fileID: 1520186877}
   winAction:
     m_PersistentCalls:
       m_Calls:

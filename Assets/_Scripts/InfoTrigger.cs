@@ -19,7 +19,7 @@ public class InfoTrigger : MonoBehaviour
             descriptionText.text = description;
         }
     }
-
+    //
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Player")
