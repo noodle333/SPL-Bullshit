@@ -4,9 +4,7 @@ using UnityEngine.Events;
 public class ButtonTrigger : MonoBehaviour
 {
     //winAction isnt needed but checking shit isnt either.
-    //levelManager doesnt count all buttonTriggers you yourself assign the necessary ones
-    //meaning you can have as many as you want and only 1 is needed to complete the level
-
+ 
     [Header("GameObject for the correct block for the position")]
     [SerializeField] public GameObject[] expectedBlock;
 

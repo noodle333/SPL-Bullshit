@@ -24,7 +24,7 @@ public class RockCounter : MonoBehaviour
     {
         rocksNeededText.text = "int rocksNeeded = " + rocksNeeded.ToString() + ";";
 
-        if(rocksNeeded == 0 && !stopToggle)
+        if (rocksNeeded == 0 && !stopToggle)
         {
             GetComponent<ToggleActive>().Toggle();
             stopToggle = true;
