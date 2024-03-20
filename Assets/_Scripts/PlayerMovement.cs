@@ -25,6 +25,11 @@ public class PlayerMovement : MonoBehaviour
             FindObjectOfType<SceneLoader>().StartLoadSceneMenu(SceneManager.GetActiveScene().name);
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+
         if (!isMoving && canMove)
         {
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
